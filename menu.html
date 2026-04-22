@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Booked & Brewed ☕📚</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="menu">
+
+  <h2 class="menu-title">Our Menu ☕</h2>
+
+  <!-- DRINKS -->
+  <h3 class="category">Drinks</h3>
+  <div class="menu-row">
+
+    <div class="menu-card">
+      <img src="images/19.jpg">
+      <h3>Espresso</h3>
+      <p>Strong & bold</p>
+      <span>₹120</span>
+      <button onclick="addToCart('Espresso',120)">Add</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/22.jpg">
+      <h3>Hot Chocolate</h3>
+      <p>Rich & cozy</p>
+      <span>₹160</span>
+      <button onclick="addToCart('Hot Chocolate',160)">Add</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/9.jpg">
+      <h3>Cold Chocolate</h3>
+      <p>Chilled & sweet</p>
+      <span>₹180</span>
+      <button onclick="addToCart('Cold Chocolate',180)">Add</button>
+    </div>
+
+  </div>
+
+  <!-- DESSERTS -->
+  <h3 class="category">Desserts</h3>
+  <div class="menu-row">
+
+    <div class="menu-card">
+      <img src="images/8.jpg">
+      <h3>Cheesecake</h3>
+      <p>Soft & creamy</p>
+      <span>₹110</span>
+      <button onclick="addToCart('Cheesecake',220)">Add</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/2.jpg">
+      <h3>Brownie</h3>
+      <p>Chocolate heaven</p>
+      <span>₹150</span>
+      <button onclick="addToCart('Brownie',150)">Add</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/21.jpg">
+      <h3>Croissant</h3>
+      <p>Buttery & flaky</p>
+      <span>₹140</span>
+      <button onclick="addToCart('Croissant',140)">Add</button>
+    </div>
+
+  </div>
+
+  <!-- CART -->
+  <div id="cart">
+    <h3>Your Order 🛒</h3>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+  </div>
+
+</section>
+
+<!-- LINK JS HERE -->
+<script src="script.js"></script>
+
+</body>
+</html>
